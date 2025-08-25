@@ -1,0 +1,118 @@
+body{
+
+    margin: 10;
+    padding: 10;
+    background-color: #e3dddd5b;
+    height: auto;
+}
+h1, h2, h3{
+    color: #0a1702;
+    
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p{
+    color: #201313;
+    display:inline;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+nav{
+    background-color: #cbc4c4;
+    padding: 10px;
+}
+img {
+    float:top;
+    margin: 10px;
+    width: 150px;
+    height: auto;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: top;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    background-color:#433e3e;
+}
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height: 100vh;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgb(224, 247, 239);
+}
+.div-inline {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc4e;
+    border-radius: 5px;
+    width:500px;
+    height:auto;
+    background-color: #736beb;
+}
+
+
+div{
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    align-self: normal;
+
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+      "header header"
+      "nav main"
+      "footer footer";
+    width:50%;
+    height: 100vh;
+}
+header{ grid-area: header; background:rgb(47, 168, 209);}
+nav{ grid-area: nav; background:lightgreen;}
+main{ grid-area: main; background:lightcoral;}
+footer{ grid-area: footer; background:rgb(179, 179, 17);}
+.parent{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.child{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 10px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
